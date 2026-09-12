@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Comparador de Preços</title>
+</head>
+<body>
+   <main class="container">
+      <h1>Comparador de Preços</h1>
+      <p class="subtitle">Digite o nome de um produto para comparar preços em várias lojas</p>
+      <form class="search-form">
+        <input placeholder="Ex: Notebook, Celular, Fone de ouvido..." class="product-input">
+        <button type="submit">Buscar</button>
+      </form>
+      <div class="chips-container">
+        <button type="button" class="chip chip--green" data-query="Luvas">Luvas</button>
+        <button type="button" class="chip chip--yellow" data-query="Papel Toalha">Papel Toalha</button>
+        <button type="button" class="chip chip--blue" data-query="Álcool em Gel">Álcool em Gel</button>
+        <button type="button" class="chip chip--red" data-query="Máscara PFF2">Máscara PFF2</button>
+      </div>
+      <p class="mode-note" hidden></p>
+      <div class="product-list"></div>
+      <canvas class="price-chart"></canvas>
+   </main>
+</body>
+<script src="script.js"></script>
+</html>
